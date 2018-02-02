@@ -18,6 +18,6 @@
    - **Expected**: Modifying files in the `src` will cause the appropriate task to recompile.
    - **Actual**: Works as expected.
 
-The order in which parallel scripts are executed matters with rollup (but it shouldn't). This simple test demonstrates that unless rollup is executed last, it is unable to watch files as expected.
+**Summary:** The order in which parallel scripts are executed matters with rollup (but it shouldn't). This simple test demonstrates that unless rollup is executed last, it is unable to watch files as expected.
 
 It's worth mentioning that in this simple scenario rollup was able to complete its initial compilation regardless of order. In projects with more complex rollup configurations or several parallel tasks being started, rollup will often fail to recompile on the intial run as well. This appears to happen when rollup is unable to finish compiling before being interrupted by another parallel task.
