@@ -8,7 +8,7 @@
 3. Run `npm watch:js`
    - **Description**: The `build:js` script is executed, running rollup in watch mode.
    - **Expected**: Modifying files in `src/js` causes rollup to recompile.
-   - **Actual**: Works as expected.
+   - **Actual**: Works as expected, showing rollup's watch feature works fine on its own.
 4. Run `npm watch-bug`
    - **Description**: The `build:js` and `build:pcss` scripts are run in parallel, each in watch mode.
    - **Expected**: Modifying files in the `src` will cause the appropriate task to recompile.
