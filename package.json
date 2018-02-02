@@ -1,0 +1,20 @@
+{
+  "name": "rollup-watch-bug",
+  "version": "1.0.0",
+  "description": "A repo created to demonstrate an issue with rollup watch",
+  "author": "John Hildenbiddle",
+  "main": "index.js",
+  "scripts": {
+    "build:js"  : "rollup -c",
+    "build:pcss": "postcss src/pcss/style.css --dir dist --use autoprefixer --no-map",
+    "watch-bug" : "npm run watch:js & npm run watch:pcss",
+    "watch-fix" : "npm run watch:pcss & npm run watch:js",
+    "watch:js"  : "npm run build:js -- -w",
+    "watch:pcss": "npm run build:pcss -- -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "postcss-cli": "^4.1.1",
+    "rollup": "^0.55.3"
+  }
+}
