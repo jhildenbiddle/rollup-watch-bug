@@ -1,7 +1,8 @@
 # rollup-watch-bug
 
 > A repo demonstrating an issue with the watch functionality of [rollup.js](https://rollupjs.org/)
->
+
+Issue: https://github.com/rollup/rollup/issues/1938
 
 1. Clone the repo
 2. Install dependencies: `npm i`
